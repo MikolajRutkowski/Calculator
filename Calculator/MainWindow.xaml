@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <UniformGrid HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center"  Width="Auto" Height="Auto">
+            <Button x:Name="One" Width="40" Height="40">1</Button>
+            <Button x:Name="Two" Width="40" Height="40">2</Button>
+            <Button x:Name="Thre" Width="40" Height="40">3</Button>
+            <Button x:Name="Four" Width="40" Height="40">4</Button>
+            <Button x:Name="Five" Width="40" Height="40">5</Button>
+            <Button x:Name="Six" Width="40" Height="40">6</Button>
+            <Button x:Name="Seven" Width="40" Height="40">7</Button>
+            <Button x:Name="Eight" Width="40" Height="40">8</Button>
+            <Button x:Name="Nine" Width="40" Height="40">9</Button>
+        </UniformGrid>
+        <Label Name="Fild" Content="Label" HorizontalAlignment="Left" Margin="187,90,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
