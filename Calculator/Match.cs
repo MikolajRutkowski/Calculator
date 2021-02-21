@@ -10,7 +10,7 @@ namespace Calculator
     {
        public static string print(int x, string old_content)
         {
-            return x.ToString() + old_content;
+            return old_content + x.ToString();
         }
       static  int add(int x , int y)
         {
