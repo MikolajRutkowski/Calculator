@@ -18,15 +18,12 @@
         <UniformGrid HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center"  Width="Auto" Height="Auto">
             <Button x:Name="One" Width="40" Height="40" Click="One_Click">1</Button>
             <Button x:Name="Two" Width="40" Height="40" Click="Two_Click">2</Button>
-            <Button x:Name="Thre" Width="40" Height="40" Click="Thre_Click">3</Button>
-            <Button x:Name="Four" Width="40" Height="40" Click="Four_Click">4</Button>
-            <Button x:Name="Five" Width="40" Height="40" Click="Five_Click">5</Button>
-            <Button x:Name="Six" Width="40" Height="40" Click="Six_Click">6</Button>
-            <Button x:Name="Seven" Width="40" Height="40" Click="Seven_Click">7</Button>
-            <Button x:Name="Eight" Width="40" Height="40" Click="Eight_Click">8</Button>
-            <Button x:Name="Nine" Width="40" Height="40" Click="Nine_Click">9</Button>
+            <Button x:Name="Plus" Width="40" Height="40" Click="Plus_Click">+</Button>
+            <Button x:Name="Equal"  Width="75" Click="Equal_Click">=</Button>
+
+
         </UniformGrid>
-        <Label Name="Fild" Content="" HorizontalAlignment="Left" Margin="187,90,0,0" VerticalAlignment="Top"/>
+        <Label Name="Fild" Grid.Column="1" Content="{Binding Path=ReturValue}" HorizontalAlignment="Left" Margin="187,90,0,0" VerticalAlignment="Top" FontSize="14"/>
 
     </Grid>
 </Window>
