@@ -32,7 +32,7 @@ namespace Calculator
 
         private void One_Click(object sender, RoutedEventArgs e)
         {
-
+            
             match.ReturValue = 1;
         }
 
@@ -48,7 +48,47 @@ namespace Calculator
 
         private void Equal_Click(object sender, RoutedEventArgs e)
         {
+          
+        }
 
+        private void Thre_Click(object sender, RoutedEventArgs e)
+        {
+            match.ReturValue = 3;
+        }
+
+        private void Four_Click(object sender, RoutedEventArgs e)
+        {
+            match.ReturValue = 4;
+        }
+
+        private void Five_Click(object sender, RoutedEventArgs e)
+        {
+            match.ReturValue = 5;
+        }
+
+        private void Six_Click(object sender, RoutedEventArgs e)
+        {
+            match.ReturValue = 6;
+        }
+
+        private void Seven_Click(object sender, RoutedEventArgs e)
+        {
+            match.ReturValue = 7;
+        }
+
+        private void Eight_Click(object sender, RoutedEventArgs e)
+        {
+            match.ReturValue = 8;
+        }
+
+        private void Nine_Click(object sender, RoutedEventArgs e)
+        {
+            match.ReturValue = 9;
+        }
+
+        private void Zero_Click(object sender, RoutedEventArgs e)
+        {
+            match.ReturValue = 0;
         }
     }
 }
