@@ -26,19 +26,20 @@ namespace Calculator
         public MainWindow()
         {
             InitializeComponent();
-
+            BigFild.DataContext = match;
             Fild.DataContext = match;
+            
         }
 
         private void One_Click(object sender, RoutedEventArgs e)
         {
             
-            match.ReturValue = 1;
+            match.ReturnValue = 1;
         }
 
         private void Two_Click(object sender, RoutedEventArgs e)
         {
-            match.ReturValue = 2;
+            match.ReturnValue = 2;
         }
 
         private void Plus_Click(object sender, RoutedEventArgs e)
@@ -53,42 +54,42 @@ namespace Calculator
 
         private void Thre_Click(object sender, RoutedEventArgs e)
         {
-            match.ReturValue = 3;
+            match.ReturnValue = 3;
         }
 
         private void Four_Click(object sender, RoutedEventArgs e)
         {
-            match.ReturValue = 4;
+            match.ReturnValue = 4;
         }
 
         private void Five_Click(object sender, RoutedEventArgs e)
         {
-            match.ReturValue = 5;
+            match.ReturnValue = 5;
         }
 
         private void Six_Click(object sender, RoutedEventArgs e)
         {
-            match.ReturValue = 6;
+            match.ReturnValue = 6;
         }
 
         private void Seven_Click(object sender, RoutedEventArgs e)
         {
-            match.ReturValue = 7;
+            match.ReturnValue = 7;
         }
 
         private void Eight_Click(object sender, RoutedEventArgs e)
         {
-            match.ReturValue = 8;
+            match.ReturnValue = 8;
         }
 
         private void Nine_Click(object sender, RoutedEventArgs e)
         {
-            match.ReturValue = 9;
+            match.ReturnValue = 9;
         }
 
         private void Zero_Click(object sender, RoutedEventArgs e)
         {
-            match.ReturValue = 0;
+            match.ReturnValue = 0;
         }
     }
 }

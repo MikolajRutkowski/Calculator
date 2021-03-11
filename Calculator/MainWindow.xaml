@@ -31,7 +31,7 @@
 
 
         </UniformGrid>
-        <Label Name="Fild" Grid.Column="1" Content="{Binding Path=ReturValue}" HorizontalAlignment="Left" Margin="187,90,0,0" VerticalAlignment="Top" FontSize="14"/>
-
+        <Label Name="Fild" Grid.Column="1" Content="{Binding Path=ReturnValue}" HorizontalAlignment="Left" Margin="187,90,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Name="BigFild"  Grid.Column="0" Content="{Binding Path=Equal}" HorizontalAlignment="Left" Margin="187,90,0,0" VerticalAlignment="Top" FontSize="14"/>
     </Grid>
 </Window>

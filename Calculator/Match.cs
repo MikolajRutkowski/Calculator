@@ -11,29 +11,47 @@ namespace Calculator
     {
         private int[] table = new int[10];
         private int conter;
-        private int returValue;
-        public int ReturValue { get { return returValue; } 
+        private int returnValue;
+        private string equal;
+        public string Equal
+        {
+            get { return equal; }
+            set { 
+                equal = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("Equal")); // co zmieniło i nazwa musi być taka sama ja patch
+            }
+        }
+       
+        public int ReturnValue { get { return returnValue; } 
             set {
-                returValue = value;
+                if(conter == 9) { conter = 0; }
+                returnValue = value;
                 table[conter] = value;
                 conter++;
-                PropertyChanged(this, new PropertyChangedEventArgs("ReturValue"));
+                Equal += value.ToString();
+
+
+                
+                PropertyChanged(this, new PropertyChangedEventArgs("ReturnValue"));
             }
         }
 
         public Match()
         {
             conter = 0;
-            returValue = 0;
+            returnValue = 0;
+            equal = "";
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
        public void add()
         {
-            returValue = table[0] + table[1];
+            Equal += "+";
+            returnValue = table[0] + table[1];
             conter = 0;
-            PropertyChanged(this, new PropertyChangedEventArgs("ReturValue"));
+            PropertyChanged(this, new PropertyChangedEventArgs("Equal"));
+            PropertyChanged(this, new PropertyChangedEventArgs("ReturnValue"));
         }
     }
 }
