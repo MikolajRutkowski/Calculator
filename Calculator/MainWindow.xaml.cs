@@ -49,7 +49,7 @@ namespace Calculator
 
         private void Equal_Click(object sender, RoutedEventArgs e)
         {
-          
+            match.End();
         }
 
         private void Thre_Click(object sender, RoutedEventArgs e)
